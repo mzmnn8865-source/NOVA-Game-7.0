@@ -4241,10 +4241,21 @@ html[data-perf="low"] .nav-shell {
 }
 
 @media (max-width: 480px) {
-    .brand-center span:not(.brand-mark):not(:nth-child(2)) {
-        display: none;
+    /* متن «نووا» و «گیم» همیشه نمایش داده می‌شن — فقط کوچیک‌تر می‌شن */
+    .brand-center {
+        font-size: 14px;
+        gap: 5px;
+        padding: 4px 6px;
     }
-    .brand-center { gap: 0; padding: 4px; }
+    .brand-center .brand-mark {
+        width: 22px;
+        height: 22px;
+        border-radius: 7px;
+    }
+    .brand-center .brand-mark svg {
+        width: 12px;
+        height: 12px;
+    }
 }
 
 @media (max-width: 380px) {
